@@ -1,0 +1,17 @@
+name: Check PR branches
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-branches:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if PR is from develop branch
+        run: |
+          if [ "${{ github.head_ref }}" != "develop" ]; then
+            echo "Pull requests to main branch must come from develop branch."
+            exit 1
+          fi
