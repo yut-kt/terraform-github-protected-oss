@@ -13,7 +13,7 @@ provider "github" {}
 ### Init ###
 
 # module "protected_oss" {
-#   source                      = "../../"
+#   source                      = "yut-kt/protected-oss/github"
 #   init                        = true # True when created for the first time.
 #   repository_name             = "terraform-github-protected-oss"
 #   repository_description      = "Terraform module to create a GitHub oss repository"
@@ -23,7 +23,7 @@ provider "github" {}
 ### After ###
 
 module "protected_oss" {
-  source                                            = "../../"
+  source                                            = "yut-kt/protected-oss/github"
   init                                              = false # True when created for the first time.
   repository_name                                   = "terraform-github-protected-oss"
   repository_description                            = "Terraform module to create a GitHub oss repository"
