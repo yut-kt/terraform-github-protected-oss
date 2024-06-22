@@ -11,8 +11,9 @@ terraform {
 provider "github" {}
 
 module "protected_oss" {
-  source                 = "../../"
-  repository_name        = "terraform-github-protected-oss"
-  repository_description = "Terraform module to create a GitHub oss repository"
+  source                      = "../../"
+  init                        = true # True when created for the first time.
+  repository_name             = "terraform-github-protected-oss"
+  repository_description      = "Terraform module to create a GitHub oss repository"
   repository_license_template = "gpl-3.0"
 }

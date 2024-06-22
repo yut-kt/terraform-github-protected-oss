@@ -3,7 +3,7 @@ resource "github_repository" "this" {
   description                 = var.repository_description
   homepage_url                = var.repository_homepage_url
   squash_merge_commit_title   = "PR_TITLE"
-  squash_merge_commit_message = "PR_BODY"
+  squash_merge_commit_message = "COMMIT_MESSAGES"
   merge_commit_title          = "PR_TITLE"
   merge_commit_message        = "PR_BODY"
   allow_merge_commit          = true
