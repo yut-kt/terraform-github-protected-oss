@@ -37,6 +37,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_init"></a> [init](#input\_init) | Whether the first time to create the repository or not | `bool` | `true` | no |
 | <a name="input_repository_name"></a> [repository\_name](#input\_repository\_name) | GitHub repository name | `string` | n/a | yes |
 | <a name="input_repository_description"></a> [repository\_description](#input\_repository\_description) | GitHub repository description | `string` | n/a | yes |
 | <a name="input_repository_homepage_url"></a> [repository\_homepage\_url](#input\_repository\_homepage\_url) | GitHub repository homepage url | `string` | `null` | no |
