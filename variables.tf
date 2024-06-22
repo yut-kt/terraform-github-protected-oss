@@ -31,3 +31,9 @@ variable "repository_license_template" {
   description = "Use the [name of the template](https://github.com/github/choosealicense.com/tree/gh-pages/_licenses) without the extension. For example, \"mit\" or \"mpl-2.0\""
   default     = null
 }
+
+variable "protection_branch_required_status_checks_contexts" {
+  type        = list(string)
+  description = "A list of contexts required for a branch to be protected"
+  default     = []
+}
