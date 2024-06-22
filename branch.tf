@@ -16,7 +16,8 @@ resource "github_branch_protection" "main" {
   required_linear_history         = false
   require_conversation_resolution = true
   required_status_checks {
-    strict = true
+    strict   = true
+    contexts = var.protection_branch_required_status_checks_contexts
   }
   required_pull_request_reviews {
     dismiss_stale_reviews           = true
@@ -34,7 +35,8 @@ resource "github_branch_protection" "develop" {
   required_linear_history         = true
   require_conversation_resolution = true
   required_status_checks {
-    strict = true
+    strict   = true
+    contexts = var.protection_branch_required_status_checks_contexts
   }
   required_pull_request_reviews {
     dismiss_stale_reviews           = true

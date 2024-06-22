@@ -43,6 +43,7 @@ No modules.
 | <a name="input_repository_homepage_url"></a> [repository\_homepage\_url](#input\_repository\_homepage\_url) | GitHub repository homepage url | `string` | `null` | no |
 | <a name="input_repository_gitignore_template"></a> [repository\_gitignore\_template](#input\_repository\_gitignore\_template) | Use the [name of the template](https://github.com/github/gitignore) without the extension. For example, "Haskell" | `string` | `null` | no |
 | <a name="input_repository_license_template"></a> [repository\_license\_template](#input\_repository\_license\_template) | Use the [name of the template](https://github.com/github/choosealicense.com/tree/gh-pages/_licenses) without the extension. For example, "mit" or "mpl-2.0" | `string` | `null` | no |
+| <a name="input_protection_branch_required_status_checks_contexts"></a> [protection\_branch\_required\_status\_checks\_contexts](#input\_protection\_branch\_required\_status\_checks\_contexts) | A list of contexts required for a branch to be protected | `list(string)` | `[]` | no |
 
 ## Outputs
 
